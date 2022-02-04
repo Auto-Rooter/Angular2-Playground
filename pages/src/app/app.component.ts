@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentPage = 3;
+  currentPage = 0;
   images = [
     {
       title: 'At the Beach',
@@ -25,4 +25,8 @@ export class AppComponent {
       url: 'https://images.unsplash.com/photo-1491002052546-bf38f186af56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25vd3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
     }
   ];
+
+  checkWindowIndex(i) {
+    return Math.abs(this.currentPage - i) < 5;
+  }
 }
