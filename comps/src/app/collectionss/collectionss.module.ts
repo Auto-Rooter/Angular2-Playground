@@ -10,9 +10,6 @@ import { CollectionHomeComponent } from './collection-home/collection-home.compo
   imports: [
     CommonModule,
     CollectionssRoutingModule
-  ],
-  exports: [
-    CollectionHomeComponent
   ]
 })
 export class CollectionssModule { }
